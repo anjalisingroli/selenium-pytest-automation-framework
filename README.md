@@ -1,2 +1,49 @@
-# selenium-pytest-automation-framework
-A Python-based Selenium automation framework using Pytest and Page Object Model (POM) to perform end-to-end testing of a web application with reporting and screenshot capture.
+# Selenium Pytest Automation Framework
+
+## Overview
+
+This project is a Selenium automation testing framework built using Python and Pytest.
+It follows the Page Object Model (POM) design pattern to create maintainable and scalable automated test scripts for web applications.
+
+## Tech Stack
+
+* Python
+* Selenium WebDriver
+* Pytest
+* Page Object Model (POM)
+
+## Project Structure
+
+
+Selenium_Framework
+│
+├── pages/          # Page Object classes
+├── tests/          # Test cases
+├── screenshots/    # Failure screenshots
+├── reports/        # Test reports
+├── conftest.py     # Pytest fixtures
+└── README.md
+
+
+## Features
+
+* Automated login test cases
+* Page Object Model structure
+* Pytest test execution
+* Automatic screenshot capture on test failure
+
+## How to Run Tests
+
+1. Install dependencies
+
+pip install -r requirements.txt
+
+
+2. Run tests
+   
+pytest
+
+## Author
+
+Anjali Singroli
+
