@@ -14,7 +14,7 @@ It follows the Page Object Model (POM) design pattern to create maintainable and
 
 ## Project Structure
 
-
+```
 Selenium_Framework
 │
 ├── pages/          # Page Object classes
@@ -23,7 +23,7 @@ Selenium_Framework
 ├── reports/        # Test reports
 ├── conftest.py     # Pytest fixtures
 └── README.md
-
+```
 
 ## Features
 
@@ -36,14 +36,16 @@ Selenium_Framework
 
 1. Install dependencies
 
+```
 pip install -r requirements.txt
-
+```
 
 2. Run tests
-   
+
+```
 pytest
+```
 
 ## Author
 
 Anjali Singroli
-
