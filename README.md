@@ -17,11 +17,15 @@ It follows the Page Object Model (POM) design pattern to create maintainable and
 ```
 Selenium_Framework
 │
-├── pages/          # Page Object classes
-├── tests/          # Test cases
-├── screenshots/    # Failure screenshots
-├── reports/        # Test reports
-├── conftest.py     # Pytest fixtures
+├── pages/                  # Page Object classes
+│   └── login_page.py       # Login page locators and actions
+│
+├── tests/                  # Test cases
+│   └── test_login.py       # Login test case
+│
+├── screenshots/            # Failure screenshots
+├── reports/                # Test reports
+├── conftest.py             # Pytest fixtures
 └── README.md
 ```
 
