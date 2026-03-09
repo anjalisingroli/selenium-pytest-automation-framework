@@ -39,6 +39,19 @@ selenium-pytest-automation-framework
 * Page Object Model structure
 * Pytest test execution
 * Automatic screenshot capture on test failure
+## Automation Workflow
+
+Test Case (Pytest)
+↓
+Page Object Model (pages folder)
+↓
+Selenium WebDriver
+↓
+Web Application
+↓
+Test Result
+↓
+Reports & Screenshots
 
 ## Installation
 
