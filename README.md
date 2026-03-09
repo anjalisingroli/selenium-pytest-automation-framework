@@ -40,19 +40,41 @@ selenium-pytest-automation-framework
 * Pytest test execution
 * Automatic screenshot capture on test failure
 
-## How to Run Tests
+## Installation
 
-1. Install dependencies
+1. Clone the repository
+
+```
+git clone https://github.com/anjalisingroli/selenium-pytest-automation-framework.git
+```
+
+2. Navigate to the project folder
+
+```
+cd selenium-pytest-automation-framework
+```
+
+3. Install required dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Run tests
+## How to Run Tests
+
+Run all test cases using:
 
 ```
 pytest
 ```
+
+## Reports
+
+After test execution, HTML reports will be generated inside the **reports** folder.
+
+## Screenshots
+
+If any test fails, screenshots are automatically captured and stored inside the **screenshots** folder.
 
 ## Author
 
