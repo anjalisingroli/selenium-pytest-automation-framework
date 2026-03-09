@@ -41,6 +41,9 @@ selenium-pytest-automation-framework
 * Automatic screenshot capture on test failure
 ## Automation Workflow
 
+## Automation Workflow
+
+```
 Test Case (Pytest)
         │
         ▼
@@ -57,7 +60,7 @@ Test Result
         │
         ▼
 Reports & Screenshots
-
+```
 ## Installation
 
 1. Clone the repository
