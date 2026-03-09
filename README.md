@@ -15,7 +15,7 @@ It follows the Page Object Model (POM) design pattern to create maintainable and
 ## Project Structure
 
 ```
-Selenium_Framework
+selenium-pytest-automation-framework
 │
 ├── pages/                  # Page Object classes
 │   └── login_page.py       # Login page locators and actions
@@ -25,8 +25,12 @@ Selenium_Framework
 │
 ├── screenshots/            # Failure screenshots
 ├── reports/                # Test reports
+│
 ├── conftest.py             # Pytest fixtures
-└── README.md
+├── pytest.ini              # Pytest configuration
+├── requirements.txt        # Project dependencies
+├── .gitignore              # Ignored files for Git
+└── README.md               # Project documentation
 ```
 
 ## Features
