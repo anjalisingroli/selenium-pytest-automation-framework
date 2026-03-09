@@ -42,15 +42,20 @@ selenium-pytest-automation-framework
 ## Automation Workflow
 
 Test Case (Pytest)
-↓
+        │
+        ▼
 Page Object Model (pages folder)
-↓
+        │
+        ▼
 Selenium WebDriver
-↓
+        │
+        ▼
 Web Application
-↓
+        │
+        ▼
 Test Result
-↓
+        │
+        ▼
 Reports & Screenshots
 
 ## Installation
