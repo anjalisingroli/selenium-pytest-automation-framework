@@ -15,7 +15,7 @@ It follows the Page Object Model (POM) design pattern to create maintainable and
 ## Project Structure
 
 ```
-Selenium_Framework
+selenium-pytest-automation-framework
 │
 ├── pages/                  # Page Object classes
 │   └── login_page.py       # Login page locators and actions
@@ -25,8 +25,12 @@ Selenium_Framework
 │
 ├── screenshots/            # Failure screenshots
 ├── reports/                # Test reports
+│
 ├── conftest.py             # Pytest fixtures
-└── README.md
+├── pytest.ini              # Pytest configuration
+├── requirements.txt        # Project dependencies
+├── .gitignore              # Ignored files for Git
+└── README.md               # Project documentation
 ```
 
 ## Features
@@ -35,20 +39,63 @@ Selenium_Framework
 * Page Object Model structure
 * Pytest test execution
 * Automatic screenshot capture on test failure
+## Automation Workflow
 
-## How to Run Tests
+## Automation Workflow
 
-1. Install dependencies
+```
+Test Case (Pytest)
+        │
+        ▼
+Page Object Model (pages folder)
+        │
+        ▼
+Selenium WebDriver
+        │
+        ▼
+Web Application
+        │
+        ▼
+Test Result
+        │
+        ▼
+Reports & Screenshots
+```
+## Installation
+
+1. Clone the repository
+
+```
+git clone https://github.com/anjalisingroli/selenium-pytest-automation-framework.git
+```
+
+2. Navigate to the project folder
+
+```
+cd selenium-pytest-automation-framework
+```
+
+3. Install required dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-2. Run tests
+## How to Run Tests
+
+Run all test cases using:
 
 ```
 pytest
 ```
+
+## Reports
+
+After test execution, HTML reports will be generated inside the **reports** folder.
+
+## Screenshots
+
+If any test fails, screenshots are automatically captured and stored inside the **screenshots** folder.
 
 ## Author
 
