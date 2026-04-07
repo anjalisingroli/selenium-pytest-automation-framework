@@ -2,29 +2,50 @@
 
 ## Overview
 
-This project is a Selenium automation testing framework built using Python and Pytest.
-It follows the Page Object Model (POM) design pattern to create maintainable and scalable automated test scripts for web applications.
+This project is an automation testing framework built using **Python and Pytest**.
+It supports both **UI Automation** and **API Automation** in a single framework.
+
+The framework follows the **Page Object Model (POM)** design pattern for UI testing and uses the **Requests library** for API testing to create maintainable and scalable automated test scripts.
+
+---
 
 ## Tech Stack
 
 * Python
 * Selenium WebDriver
 * Pytest
+* Requests Library
 * Page Object Model (POM)
+* Git & GitHub
+
+---
 
 ## Project Structure
 
 ```
 selenium-pytest-automation-framework
 │
-├── pages/                  # Page Object classes
+├── pages/                  # Page Object classes for UI
 │   └── login_page.py       # Login page locators and actions
 │
-├── tests/                  # Test cases
-│   └── test_login.py       # Login test case
+├── api/                    # API helper functions
+│   └── api_helper.py
+│
+├── tests/
+│   ├── ui_tests/           # Selenium UI test cases
+│   │   └── test_login.py
+│   │
+│   └── api_tests/          # API test cases
+│       ├── test_get_post.py
+│       ├── test_create_post.py
+│       ├── test_update_post.py
+│       └── test_delete_post.py
+│
+├── config/
+│   └── config.py           # Base URLs and configuration
 │
 ├── screenshots/            # Failure screenshots
-├── reports/                # Test reports
+├── reports/                # HTML test reports
 │
 ├── conftest.py             # Pytest fixtures
 ├── pytest.ini              # Pytest configuration
@@ -33,15 +54,24 @@ selenium-pytest-automation-framework
 └── README.md               # Project documentation
 ```
 
+---
+
 ## Features
 
-* Automated login test cases
-* Page Object Model structure
+* UI automation using Selenium WebDriver
+* API automation using Requests library
+* Page Object Model (POM) structure
 * Pytest test execution
+* Parametrized test cases
+* HTML test reports
 * Automatic screenshot capture on test failure
-## Automation Workflow
+* Organized UI and API test structure
+
+---
 
 ## Automation Workflow
+
+### UI Automation Workflow
 
 ```
 Test Case (Pytest)
@@ -61,41 +91,93 @@ Test Result
         ▼
 Reports & Screenshots
 ```
+
+---
+
+### API Automation Workflow
+
+```
+Test Case (Pytest)
+        │
+        ▼
+API Helper Functions
+        │
+        ▼
+Requests Library
+        │
+        ▼
+API Endpoint
+        │
+        ▼
+Response Validation
+        │
+        ▼
+Test Result
+```
+
+---
+
 ## Installation
 
-1. Clone the repository
+### 1 Clone the repository
 
 ```
 git clone https://github.com/anjalisingroli/selenium-pytest-automation-framework.git
 ```
 
-2. Navigate to the project folder
+### 2 Navigate to the project folder
 
 ```
 cd selenium-pytest-automation-framework
 ```
 
-3. Install required dependencies
+### 3 Install required dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
+---
+
 ## How to Run Tests
 
-Run all test cases using:
+Run all tests:
 
 ```
 pytest
 ```
 
+Run only API tests:
+
+```
+pytest -m api
+```
+
+Run only UI tests:
+
+```
+pytest -m ui
+```
+
+---
+
 ## Reports
 
 After test execution, HTML reports will be generated inside the **reports** folder.
 
+Example location:
+
+```
+reports/report.html
+```
+
+---
+
 ## Screenshots
 
-If any test fails, screenshots are automatically captured and stored inside the **screenshots** folder.
+If any UI test fails, screenshots are automatically captured and stored inside the **screenshots** folder.
+
+---
 
 ## Author
 
