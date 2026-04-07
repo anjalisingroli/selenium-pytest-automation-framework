@@ -1,12 +1,12 @@
 import pytest
 from selenium import webdriver
 import os
-from config import BASE_URL
+from config.config import UI_BASE_URL
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
     driver.maximize_window()
-    driver.get(BASE_URL)
+    driver.get(UI_BASE_URL)
     yield driver
     driver.quit()
 
